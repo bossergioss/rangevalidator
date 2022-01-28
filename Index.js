@@ -51,5 +51,15 @@ class RangeValidator {
        return this._to;
     }
 
+    get range (){
+        
+        let arrRange = [];
+        for (let i = this._from; i <= this._to; i++) {
+          arrRange.push(i);
+        }
+        return arrRange;
+    } 
+    
+
 }
 
