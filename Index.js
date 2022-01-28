@@ -60,6 +60,18 @@ class RangeValidator {
         return arrRange;
     } 
     
+    validate(valueof) {
 
+        let arrRange = [];
+        for (let i = this._from; i <= this._to; i++) {
+          arrRange.push(i);
+        }
+
+        if (arrRange.includes(valueof)) {
+            console.log('Range has this value');
+        } else {
+            throw new Error('Range has not this value');
+        }
+    }
 }
 
